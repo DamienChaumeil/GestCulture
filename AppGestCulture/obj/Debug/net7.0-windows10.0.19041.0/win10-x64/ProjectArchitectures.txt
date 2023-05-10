@@ -1,0 +1,1 @@
+C:\Users\damie\source\repos\AppGestCulture\AppGestCulture\AppGestCulture.csproj;x64

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGestCulture.Views.SaisieParcelle"
+             Title="SaisieParcelle">
+    <StackLayout Padding="20" >
+        <Label Text="Agriculteur"/>
+        <Entry Placeholder="Saisir un Agriculteur" Keyboard="Numeric"/>
+
+        <Label Text="Surface parcelle"/>
+        <Entry x:Name="SaisiParc" Placeholder="Saisir une surface en hectare" Keyboard="Numeric"/>
+
+        <Label Text="Espèce"/>
+        <Picker>
+            <Picker.Items>
+                <x:String>Option A</x:String>
+                <x:String>Option B</x:String>
+                <x:String>Option C</x:String>
+            </Picker.Items>
+        </Picker>
+        <Label Text="Rendement actuel"/>
+        <Entry Placeholder="" Keyboard="Numeric"/>
+
+        <Button Text="Enregistrer" Clicked="SubmitData" Margin="0,20,0,0"/>
+
+    </StackLayout>
+</ContentPage>
