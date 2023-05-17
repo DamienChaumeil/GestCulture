@@ -8,9 +8,9 @@ public class Constants
 
     public static string DatabasePath = Path.Combine(FileSystem.AppDataDirectory, DatabaseFilename);
 
-    public static string TechnicienMatricule = "root";
+    public static string TechnicienMatricule = "AAAA1111";
 
-    public static string TechnicienMdp = "root";
+    public static string TechnicienMdp = "caribou";
 
 
     public const SQLiteOpenFlags Flags = SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create | SQLiteOpenFlags.SharedCache;   

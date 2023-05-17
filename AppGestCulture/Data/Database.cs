@@ -15,7 +15,7 @@ namespace AppGestCulture.Data
         public Database()
         {
             connection = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
-
+            //connection.DropTableAsync<Technicien>();
             connection.CreateTableAsync<Technicien>().Wait();
             connection.CreateTableAsync<Espece>().Wait();
             connection.CreateTableAsync<Exploitation>().Wait();
