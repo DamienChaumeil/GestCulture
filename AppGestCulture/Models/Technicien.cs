@@ -5,8 +5,10 @@ namespace AppGestCulture.Models;
 
 public class Technicien
 {
-    [PrimaryKey]
-    public String Matricule { get; set; }
+    [PrimaryKey, AutoIncrement]
+    public int ID_Tech { get; set; }
+
+    public string Matricule { get; set; }
 
     public string Nom { get; set; }
 

@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,24 @@ namespace AppGestCulture.Models;
 public class Parcelle
 {
     [PrimaryKey, AutoIncrement]
-    private int Id_parc { get; set; }
+    public int Id_parc { get; set; }
 
-    private float Surface { get; set; }
+    [ForeignKey(typeof(Exploitation))]
+    public int Id_exploi { get; set; }
 
-    private float Rendement_prev { get; set; }
+    public int Id_espece { get; set; }
 
-    private float Rendement_reel { get; set; }
+    public string Code_parc { get; set; }
 
+    public float Surface { get; set; }
+
+    public float Rendement_prev { get; set; }
+
+    public float Rendement_reel { get; set; }
+
+    public string Annee { get; set; }
+
+
+    [ManyToOne]
+    public Exploitation Exploitation { get; set; }
 }

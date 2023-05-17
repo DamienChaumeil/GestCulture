@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\damie\\source\\repos\\AppGestCulture\\AppGestCulture\\AppGestCulture.csproj": {}
+    "C:\\Users\\traye\\source\\repos\\GestCulture\\AppGestCulture\\AppGestCulture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\damie\\source\\repos\\AppGestCulture\\AppGestCulture\\AppGestCulture.csproj": {
+    "C:\\Users\\traye\\source\\repos\\GestCulture\\AppGestCulture\\AppGestCulture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\damie\\source\\repos\\AppGestCulture\\AppGestCulture\\AppGestCulture.csproj",
+        "projectUniqueName": "C:\\Users\\traye\\source\\repos\\GestCulture\\AppGestCulture\\AppGestCulture.csproj",
         "projectName": "AppGestCulture",
-        "projectPath": "C:\\Users\\damie\\source\\repos\\AppGestCulture\\AppGestCulture\\AppGestCulture.csproj",
-        "packagesPath": "C:\\Users\\damie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\damie\\source\\repos\\AppGestCulture\\AppGestCulture\\obj\\",
+        "projectPath": "C:\\Users\\traye\\source\\repos\\GestCulture\\AppGestCulture\\AppGestCulture.csproj",
+        "packagesPath": "C:\\Users\\traye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\traye\\source\\repos\\GestCulture\\AppGestCulture\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\damie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\traye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,8 +86,16 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.81, )",
               "autoReferenced": true
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
@@ -181,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -216,8 +224,16 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.81, )",
               "autoReferenced": true
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
@@ -257,7 +273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -292,12 +308,12 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.81, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.81, )",
               "autoReferenced": true
             },
             "Microsoft.Windows.SDK.BuildTools": {
@@ -310,6 +326,14 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "SQLiteNetExtensions.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
@@ -334,11 +358,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -346,7 +370,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -366,7 +390,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

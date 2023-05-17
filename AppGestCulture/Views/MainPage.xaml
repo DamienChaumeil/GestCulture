@@ -10,13 +10,13 @@
         <Label Text="Connexion" FontSize="Large" Margin="0,20,0,20" />
 
         <Label Text="Nom d'utilisateur" />
-        <Entry Text="{Binding Username}" />
+        <Entry Text="{Binding BinUsername}" />
 
         <Label Text="Mot de passe" />
-        <Entry Text="{Binding Password}" IsPassword="True"  />
+        <Entry Text="{Binding BinPassword}" IsPassword="True"  />
 
-        <Button Text="Se connecter" Command="{Binding LoginCommand}" Clicked="Onclicked" Margin="0,20,0,0"  />
+        <Button Text="Se connecter" Command="{Binding BinLoginCommand}" Margin="0,20,0,0"  />
 
-            <Label Text="{Binding ErrorMessage}" TextColor="Red" Margin="0,20,0,0"  />
+        <Label Text="{Binding BinErrorMessage}" TextColor="Red" Margin="0,20,0,0"  />
     </StackLayout>
 </ContentPage>

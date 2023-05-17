@@ -1,5 +1,6 @@
 ﻿using AppGestCulture.Data;
 using AppGestCulture.Models;
+using AppGestCulture.ViewModels;
 using System.Data;
 
 namespace AppGestCulture.Views
@@ -7,19 +8,26 @@ namespace AppGestCulture.Views
 
     public partial class MainPage : ContentPage
     {
-        private readonly Database database;
+        static Database database;
+        readonly MainPageViewModel viewModel;
+
+        public static Database Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new Database();
+                }
+                return database;
+            }
+        }
 
         public MainPage(Database database)
         {
             InitializeComponent();
-            this.database = database;
+            viewModel = new MainPageViewModel();
+            BindingContext = viewModel;
         }
-
-        private async void Onclicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ChoixOption());
-        }
-
     }
-
 }

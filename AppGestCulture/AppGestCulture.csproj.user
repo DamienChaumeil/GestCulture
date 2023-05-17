@@ -15,10 +15,25 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Views\ChoixOption.xaml">
+    <MauiXaml Update="Views\ParcelleDetailsView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\SaisieParcelle.xaml">
+    <MauiXaml Update="Views\ExploitationEditView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ExploitationDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ParcelleSaisieView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ExploitationView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ExploitationSaisieView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\ParcelleEditView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

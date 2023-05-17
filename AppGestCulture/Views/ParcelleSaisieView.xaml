@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:AppGestCulture.ViewModels"
+             xmlns:Models="clr-namespace:AppGestCulture.Models"
+             x:Class="AppGestCulture.Views.ParcelleSaisieView"
+             x:DataType="ViewModels:ParcelleSaisieViewModel"
+             Title="Parcelle">
+    <StackLayout Padding="20" >
+        <Label Text="Code de parcelle"/>
+        <Entry Placeholder="Saisir un Code de parcelle" Text="{Binding Parcelle.Code_parc, Mode=TwoWay}" x:Name="Code"/>
+
+        <Label Text="Surface:"/>
+        <Entry Text="{Binding Parcelle.Surface, Mode=TwoWay}" x:Name="Surface" Keyboard="Numeric"/>
+
+        <Label Text="Espece:"/>
+        <Picker ItemsSource="{Binding obEspece}" Title="Selectionner" ItemDisplayBinding="{Binding Nom}" SelectedItem="{Binding SelectedEspece, Mode=TwoWay}"/>
+
+        <Label Text="Rendement prévue:"/>
+        <Entry Text="{Binding Parcelle.Rendement_prev, Mode=TwoWay}" x:Name="Rendement_prev" Keyboard="Numeric"/>
+
+        <Label Text="Rendement réel:"/>
+        <Entry Text="{Binding Parcelle.Rendement_reel, Mode=TwoWay}" x:Name="Rendement_reel" Keyboard="Numeric"/>
+
+        <Label Text="Année:"/>
+        <Entry Text="{Binding Parcelle.Annee, Mode=TwoWay}" x:Name="Annee" Keyboard="Numeric"/>
+        
+        <Button x:Name="btnAddParcelle" Text="Enregistrer" Command="{Binding btnAddParcelle}" Margin="0,20,0,0"/>
+    </StackLayout>
+</ContentPage>

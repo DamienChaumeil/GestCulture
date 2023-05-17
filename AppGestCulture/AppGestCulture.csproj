@@ -52,14 +52,49 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+		<PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\ChoixOption.xaml">
+	  <Compile Update="Views\ParcelleDetailsView.xaml.cs">
+	    <DependentUpon>ParcelleDetailsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ExploitationEditView.xaml.cs">
+	    <DependentUpon>ExploitationEditView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ExploitationView.xaml.cs">
+	    <DependentUpon>ExploitationView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ExploitationDetailsView.xaml.cs">
+	    <DependentUpon>ExploitationDetailsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ExploitationSaisieView.xaml.cs">
+	    <DependentUpon>ExploitationSaisieView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ParcelleEditView.xaml.cs">
+	    <DependentUpon>ParcelleEditView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ParcelleDetailsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\SaisieParcelle.xaml">
+	  <MauiXaml Update="Views\ExploitationEditView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ExploitationDetailsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ExploitationView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ExploitationSaisieView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ParcelleEditView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

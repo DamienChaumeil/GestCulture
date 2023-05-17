@@ -11,10 +11,9 @@ namespace AppGestCulture.Models;
 public class Agriculteur
 {
     [PrimaryKey, AutoIncrement]
-    private int Id_agri { get; set; }
+    public int Id_agri { get; set; }
 
-    private string Nom { get; set; }
+    public string Nom { get; set; }
 
-    private string Prenom { get; set; }
-
+    public string Prenom { get; set; }
 }
